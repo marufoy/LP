@@ -501,7 +501,7 @@ body {
     width: 180px; /* Fixed width for circular shape */
     height: 180px; /* Fixed height for circular shape */
     border-radius: 50%; /* Make it circular */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Slightly more pronounced shadow */
     display: flex;
     flex-direction: column; /* Stack number and label vertically */
     align-items: center; /* Center horizontally */
@@ -510,11 +510,13 @@ body {
     gap: 0.5rem; /* Reduce gap for tighter fit */
     transition: all 0.3s ease;
     padding: 1rem; /* Adjust padding for circular shape */
+    border: 3px solid #ff0000; /* Added a solid red border */
 }
 
 .stat-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+    border-color: #cc0000; /* Darker red border on hover */
 }
 
 .stat-card .stat-number {
