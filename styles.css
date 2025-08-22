@@ -490,19 +490,26 @@ body {
 
 .results-stats {
     display: flex;
-    flex-direction: column;
+    flex-direction: row; /* Changed to row */
+    flex-wrap: wrap; /* Added to allow wrapping */
+    justify-content: center; /* Center items horizontally */
     gap: 1.5rem;
 }
 
 .stat-card {
     background: white;
-    padding: 1.5rem 2rem;
-    border-radius: 15px;
+    width: 180px; /* Fixed width for circular shape */
+    height: 180px; /* Fixed height for circular shape */
+    border-radius: 50%; /* Make it circular */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     display: flex;
-    align-items: center;
-    gap: 1.5rem;
+    flex-direction: column; /* Stack number and label vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    text-align: center; /* Center text */
+    gap: 0.5rem; /* Reduce gap for tighter fit */
     transition: all 0.3s ease;
+    padding: 1rem; /* Adjust padding for circular shape */
 }
 
 .stat-card:hover {
