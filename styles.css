@@ -3958,6 +3958,53 @@ body {
         height: 35px;
         font-size: 1.2rem;
     }
+    
+    /* Results Section Responsive Adjustments */
+    .results-content {
+        display: block;
+        gap: 2rem;
+    }
+    
+    .results-text {
+        padding-right: 0;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    
+    .results-subtitle {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    .results-description {
+        text-align: center;
+    }
+    
+    .results-stats {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+        align-items: center;
+    }
+    
+    .stat-card {
+        width: 160px;
+        height: 160px;
+    }
+    
+    .stat-card .stat-number {
+        font-size: 1.8rem;
+    }
+    
+    .stat-card .stat-label {
+        font-size: 0.9rem;
+    }
+    
+    .results-visual {
+        margin-top: 2rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -3984,33 +4031,64 @@ body {
     }
     
     .results-content {
-        grid-template-columns: 1fr;
-        gap: 2rem;
+        display: block;
+        gap: 1.5rem;
     }
     
     .results-text {
         padding-right: 0;
         text-align: center;
+        margin-bottom: 1.5rem;
     }
     
     .results-subtitle {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    
+    .results-description {
+        text-align: center;
+        font-size: 1rem;
+    }
+    
+    .results-stats {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        align-items: center;
     }
     
     .stat-card {
+        width: 140px;
+        height: 140px;
         flex-direction: column;
         text-align: center;
-        gap: 1rem;
+        gap: 0.8rem;
     }
     
     .stat-card .stat-number {
+        font-size: 1.6rem;
         min-width: auto;
     }
     
+    .stat-card .stat-label {
+        font-size: 0.85rem;
+    }
+    
+    .results-visual {
+        margin-top: 1.5rem;
+    }
+    
     .testimonial-card {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 2rem;
         padding: 2rem;
+    }
+    
+    .testimonial-data {
+        order: -1;
     }
     
     .data-metrics {
@@ -4074,5 +4152,21 @@ body {
         width: 32px;
         height: 32px;
         font-size: 1rem;
+    }
+    
+    /* Testimonial Small Screen Adjustments */
+    .testimonial-card {
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+    
+    .customer-info-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .testimonial-text {
+        gap: 1.5rem;
     }
 }
