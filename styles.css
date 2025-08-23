@@ -3871,10 +3871,11 @@ body {
 
 .checkbox-label {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     cursor: pointer;
     font-size: 16px;
     line-height: 1.6;
+    gap: 12px;
 }
 
 .checkbox-label input[type="checkbox"] {
@@ -3882,19 +3883,23 @@ body {
 }
 
 .checkmark {
-    width: 20px;
-    height: 20px;
-    border: 2px solid #e0e0e0;
+    width: 24px;
+    height: 24px;
+    border: 3px solid #e0e0e0;
     border-radius: 4px;
-    margin-right: 12px;
     position: relative;
     transition: all 0.3s ease;
     flex-shrink: 0;
+    background: white;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-top: 2px;
 }
 
 .checkbox-label input[type="checkbox"]:checked + .checkmark {
     background: linear-gradient(135deg, #ff0000, #cc0000);
     border-color: #ff0000;
+    box-shadow: 0 2px 8px rgba(255, 0, 0, 0.3);
 }
 
 .checkbox-label input[type="checkbox"]:checked + .checkmark::after {
@@ -3904,8 +3909,45 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-weight: bold;
-    font-size: 12px;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 1;
+    text-align: center;
+}
+
+.checkbox-label:hover .checkmark {
+    border-color: #ff0000;
+    box-shadow: 0 2px 8px rgba(255, 0, 0, 0.1);
+}
+
+.checkbox-label input[type="checkbox"]:focus + .checkmark {
+    outline: 2px solid #ff0000;
+    outline-offset: 2px;
+}
+
+/* Responsive checkbox */
+@media (max-width: 768px) {
+    .checkmark {
+        width: 22px;
+        height: 22px;
+        border-width: 2px;
+    }
+    
+    .checkbox-label input[type="checkbox"]:checked + .checkmark::after {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .checkmark {
+        width: 20px;
+        height: 20px;
+        border-width: 2px;
+    }
+    
+    .checkbox-label input[type="checkbox"]:checked + .checkmark::after {
+        font-size: 12px;
+    }
 }
 
 .privacy-link {
@@ -3936,6 +3978,18 @@ body {
     position: relative;
     overflow: hidden;
     box-shadow: 0 8px 25px rgba(255, 0, 0, 0.3);
+}
+
+.submit-btn:disabled {
+    background: linear-gradient(135deg, #cccccc, #999999);
+    cursor: not-allowed;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transform: none;
+}
+
+.submit-btn:disabled:hover {
+    transform: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .submit-btn::before {

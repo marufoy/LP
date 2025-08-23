@@ -94,8 +94,43 @@ const observer = new IntersectionObserver(function(entries) {
     });
 }, observerOptions);
 
-// Observe elements for animation
+// Form validation and submit control
 document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.getElementById('contactForm');
+    const privacyCheckbox = document.getElementById('privacy');
+    const submitBtn = document.querySelector('.submit-btn');
+    
+    // Function to update submit button state
+    function updateSubmitButton() {
+        if (privacyCheckbox.checked) {
+            submitBtn.disabled = false;
+            submitBtn.style.opacity = '1';
+        } else {
+            submitBtn.disabled = true;
+            submitBtn.style.opacity = '0.6';
+        }
+    }
+    
+    // Initialize button state
+    updateSubmitButton();
+    
+    // Update button state when checkbox changes
+    privacyCheckbox.addEventListener('change', updateSubmitButton);
+    
+    // Form submission handler
+    contactForm.addEventListener('submit', function(e) {
+        if (!privacyCheckbox.checked) {
+            e.preventDefault();
+            alert('プライバシーポリシーに同意してください。');
+            privacyCheckbox.focus();
+            return false;
+        }
+        
+        // Show success message (you can customize this)
+        alert('お問い合わせありがとうございます。24時間以内にご返信いたします。');
+    });
+    
+    // Observe elements for animation
     const animateElements = document.querySelectorAll('.problem-item, .stat-item');
     
     animateElements.forEach(el => {
