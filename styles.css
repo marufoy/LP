@@ -633,7 +633,7 @@ body {
 
 .testimonial-card {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.2fr 1fr;
     gap: 4rem;
     background: white;
     border-radius: 20px;
