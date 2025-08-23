@@ -574,7 +574,7 @@ body {
 
 .results-chart {
     background: white;
-    padding: 2rem;
+    padding: 3rem;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     width: 100%;
@@ -586,19 +586,19 @@ body {
 }
 
 .results-chart h4 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 700;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     color: #333;
 }
 
 .growth-graph-img {
     width: 100%;
-    max-width: 350px;
+    max-width: 600px;
     height: auto;
-    margin: 1rem 0;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 1.5rem 0;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .chart-placeholder {
@@ -644,8 +644,8 @@ body {
 
 .chart-legend {
     text-align: center;
-    margin-top: 1rem;
-    font-size: 0.9rem;
+    margin-top: 2rem;
+    font-size: 1rem;
     color: #666;
     font-weight: 500;
 }
