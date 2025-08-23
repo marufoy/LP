@@ -546,20 +546,27 @@ body {
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 400px;
-    background-image: url('../images/grow-graph.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 300px; /* Ensure enough height for the image */
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .results-chart h4 {
     font-size: 1.3rem;
     font-weight: 700;
+    margin-bottom: 1.5rem;
     color: #333;
-    text-align: center;
-    margin-bottom: 2rem;
+}
+
+.growth-graph-img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin: 1rem 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .chart-placeholder {
