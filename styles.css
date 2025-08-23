@@ -355,9 +355,21 @@ body {
 }
 
 .hero-visual {
+    position: absolute;
+    right: 15%;
+    bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 10;
+}
+
+.hero-visual img {
+    width: auto;
+    max-width: 1200px;
+    height: auto;
+    border-radius: 20px;
+    transform: scale(1.5);
 }
 
 .hero-video-placeholder {
