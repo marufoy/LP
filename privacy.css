@@ -1,0 +1,149 @@
+/* プライバシーポリシーページのスタイル */
+
+/* プライバシーコンテンツのメイン部分 */
+.privacy-content {
+    padding: 120px 0 60px 0;
+    background: linear-gradient(135deg, #fdf2f2 0%, #f8f0f0 100%);
+    min-height: 100vh;
+}
+
+/* プライバシータイトル (h1) */
+.privacy-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #c0392b;
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid #e74c3c;
+    position: relative;
+}
+
+.privacy-title::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+}
+
+/* プライバシーメインコンテンツ */
+.privacy-main {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(231, 76, 60, 0.1);
+    border: 1px solid #f8d7da;
+    overflow: hidden;
+}
+
+/* プライバシーセクション */
+.privacy-section {
+    padding: 2rem 3rem;
+    border-bottom: 1px solid #f5c6cb;
+}
+
+.privacy-section:last-child {
+    border-bottom: none;
+}
+
+/* プライバシーサブタイトル (h2) */
+.privacy-subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #c0392b;
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+    border-left: 4px solid #e74c3c;
+    background: linear-gradient(135deg, #fdf2f2 0%, #fbeaea 100%);
+    padding: 0.8rem 0 0.8rem 1.5rem;
+    border-radius: 0 5px 5px 0;
+}
+
+/* パラグラフとリストのスタイル */
+.privacy-section p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.privacy-section ul {
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.privacy-section li {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+/* プライバシーフッター */
+.privacy-footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.back-link {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+}
+
+.back-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(231, 76, 60, 0.4);
+    background: linear-gradient(135deg, #c0392b 0%, #a93226 100%);
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+    .privacy-content {
+        padding: 100px 0 40px 0;
+    }
+    
+    .privacy-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .privacy-subtitle {
+        font-size: 1.3rem;
+    }
+    
+    .privacy-section {
+        padding: 1.5rem 2rem;
+    }
+    
+    .privacy-footer {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .privacy-title {
+        font-size: 1.8rem;
+    }
+    
+    .privacy-subtitle {
+        font-size: 1.2rem;
+        padding: 0.6rem 0 0.6rem 1rem;
+    }
+    
+    .privacy-section {
+        padding: 1rem 1.5rem;
+    }
+}
