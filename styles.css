@@ -1678,7 +1678,7 @@ body {
 
 .pricing-plans {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin-bottom: 4rem;
     max-width: 1200px;
@@ -1779,7 +1779,7 @@ body {
 
 .plan-features {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 1rem;
 }
 
@@ -1902,6 +1902,19 @@ body {
     
     .period {
         text-align: center;
+    }
+}
+
+@media (max-width: 1200px) {
+    .pricing-plans {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        justify-items: center;
+    }
+    
+    .plan-features {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
 }
 
