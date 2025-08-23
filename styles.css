@@ -4005,6 +4005,32 @@ body {
     .results-visual {
         margin-top: 2rem;
     }
+    
+    /* Testimonial Section Responsive Adjustments */
+    .testimonial-card {
+        display: block;
+        gap: 2rem;
+        padding: 2rem;
+    }
+    
+    .testimonial-text {
+        order: 2;
+        margin-top: 2rem;
+    }
+    
+    .testimonial-data {
+        order: 1;
+    }
+    
+    .customer-voice {
+        order: 2;
+        margin-bottom: 1.5rem;
+    }
+    
+    .customer-info-container {
+        order: 1;
+        margin: 1rem 0;
+    }
 }
 
 @media (max-width: 480px) {
@@ -4082,13 +4108,33 @@ body {
     }
     
     .testimonial-card {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        padding: 2rem;
+        display: block;
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+    
+    .testimonial-text {
+        order: 2;
+        margin-top: 1.5rem;
     }
     
     .testimonial-data {
-        order: -1;
+        order: 1;
+    }
+    
+    .customer-voice {
+        order: 2;
+        margin-bottom: 1rem;
+        font-size: 1.1rem;
+        padding: 1.5rem 1rem;
+    }
+    
+    .customer-info-container {
+        order: 1;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+        margin: 0.8rem 0;
     }
     
     .data-metrics {
