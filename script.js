@@ -10,11 +10,56 @@ window.addEventListener('scroll', function() {
 
 // Mobile menu toggle
 const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-const nav = document.querySelector('.nav');
+const mobileMenu = document.getElementById('mobileMenu');
+const mobileMenuClose = document.getElementById('mobileMenuClose');
 
 mobileMenuToggle.addEventListener('click', function() {
-    nav.classList.toggle('active');
-    mobileMenuToggle.classList.toggle('active');
+    mobileMenu.classList.add('active');
+    mobileMenuToggle.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    document.body.style.position = 'fixed';
+    document.body.style.width = '100%';
+});
+
+mobileMenuClose.addEventListener('click', function() {
+    mobileMenu.classList.remove('active');
+    mobileMenuToggle.classList.remove('active');
+    document.body.style.overflow = '';
+    document.body.style.position = '';
+    document.body.style.width = '';
+});
+
+// Close mobile menu when clicking on a link
+document.querySelectorAll('.mobile-menu-link').forEach(link => {
+    link.addEventListener('click', function() {
+        mobileMenu.classList.remove('active');
+        mobileMenuToggle.classList.remove('active');
+        document.body.style.overflow = '';
+        document.body.style.position = '';
+        document.body.style.width = '';
+    });
+});
+
+// Close mobile menu when clicking outside
+mobileMenu.addEventListener('click', function(e) {
+    if (e.target === mobileMenu) {
+        mobileMenu.classList.remove('active');
+        mobileMenuToggle.classList.remove('active');
+        document.body.style.overflow = '';
+        document.body.style.position = '';
+        document.body.style.width = '';
+    }
+});
+
+// Close mobile menu on escape key
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && mobileMenu.classList.contains('active')) {
+        mobileMenu.classList.remove('active');
+        mobileMenuToggle.classList.remove('active');
+        document.body.style.overflow = '';
+        document.body.style.position = '';
+        document.body.style.width = '';
+    }
 });
 
 // Smooth scrolling for anchor links
