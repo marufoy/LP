@@ -1507,22 +1507,22 @@ body {
 
 .flow-container {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 2rem;
-    max-width: 1400px;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 1200px;
     margin: 0 auto;
-    overflow-x: auto;
     padding: 2rem 0;
+    flex-wrap: nowrap;
 }
 
 .flow-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 300px;
+    min-width: 200px;
+    max-width: 250px;
     flex: 1;
-    position: relative;
 }
 
 .flow-number {
@@ -1554,16 +1554,17 @@ body {
 
 .flow-content {
     background: white;
-    border-radius: 20px;
-    padding: 2rem;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-    border: 2px solid #ffebee;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border: 1px solid #f0f0f0;
     transition: all 0.3s ease;
     width: 100%;
-    min-height: 350px;
+    min-height: 220px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    text-align: center;
 }
 
 .flow-content:hover {
@@ -1573,34 +1574,30 @@ body {
 }
 
 .flow-title {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 700;
-    color: #ff0000;
+    color: #333;
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     line-height: 1.3;
 }
 
-.flow-details {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    margin-bottom: 2rem;
-}
-
-.flow-detail {
-    background: #f8f9fa;
-    padding: 1rem;
-    border-radius: 10px;
-    border-left: 4px solid #ff0000;
-}
-
-.flow-detail h4 {
-    font-size: 1rem;
-    font-weight: 700;
-    color: #333;
-    margin-bottom: 0.5rem;
+.flow-description {
+    font-size: 0.9rem;
+    color: #666;
     line-height: 1.4;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.flow-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0.5rem 0 1rem 0;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: all 0.3s ease;
 }
 
 .flow-detail p {
@@ -1615,12 +1612,13 @@ body {
     align-items: center;
     gap: 0.5rem;
     justify-content: center;
-    background: linear-gradient(135deg, #ffebee, #fce4ec);
-    padding: 0.75rem 1rem;
-    border-radius: 25px;
+    background: #f8f9fa;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
     font-weight: 600;
-    color: #ff0000;
-    font-size: 0.9rem;
+    color: #666;
+    font-size: 0.8rem;
+    border: 1px solid #e9ecef;
 }
 
 .flow-period i {
@@ -1628,12 +1626,12 @@ body {
 }
 
 .flow-arrow {
-    position: absolute;
-    right: -30px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
     color: #ff0000;
+    margin: 0 0.5rem;
     animation: arrow-bounce 2s ease-in-out infinite;
 }
 
