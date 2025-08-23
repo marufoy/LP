@@ -824,18 +824,6 @@ body {
     box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
 }
 
-.customer-profile::before {
-    content: '👤';
-    position: absolute;
-    top: -10px;
-    right: 20px;
-    font-size: 1.5rem;
-    background: white;
-    padding: 5px;
-    border-radius: 50%;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
 .testimonial-data {
     display: flex;
     flex-direction: column;
