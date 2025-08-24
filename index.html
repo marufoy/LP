@@ -1398,8 +1398,8 @@
                 
                 <form class="contact-form" id="contactForm">
                     <div class="form-group">
-                        <label for="company">会社名</label>
-                        <input type="text" id="company" name="company">
+                        <label for="company">会社名 <span class="required">*</span></label>
+                        <input type="text" id="company" name="company" required>
                     </div>
 
                     <div class="form-group">
@@ -1408,13 +1408,13 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="phone">電話番号</label>
-                        <input type="tel" id="phone" name="phone">
+                        <label for="phone">電話番号 <span class="required">*</span></label>
+                        <input type="tel" id="phone" name="phone" required>
                     </div>
 
                     <div class="form-group">
-                        <label for="budget">上限金額(月額)</label>
-                        <select id="budget" name="budget">
+                        <label for="budget">上限金額(月額) <span class="required">*</span></label>
+                        <select id="budget" name="budget" required>
                             <option value="">選択してください</option>
                             <option value="15万">15万</option>
                             <option value="30万">30万</option>
@@ -1431,8 +1431,8 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="message">ご相談内容 <span class="required">*</span></label>
-                        <textarea id="message" name="message" rows="6" placeholder="ご質問やご相談内容をお聞かせください" required></textarea>
+                        <label for="message">ご相談内容</label>
+                        <textarea id="message" name="message" rows="6" placeholder="ご質問やご相談内容をお聞かせください"></textarea>
                     </div>
 
                     <div class="form-group checkbox-group">
