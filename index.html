@@ -1398,58 +1398,43 @@
                 
                 <form class="contact-form" id="contactForm">
                     <div class="form-group">
-                        <label for="name">お名前 <span class="required">*</span></label>
+                        <label for="company">会社名</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name">ご担当者名 <span class="required">*</span></label>
                         <input type="text" id="name" name="name" required>
                     </div>
-                    
-                    <div class="form-group">
-                        <label for="furigana">フリガナ <span class="required">*</span></label>
-                        <input type="text" id="furigana" name="furigana" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="email">メールアドレス <span class="required">*</span></label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    
+
                     <div class="form-group">
                         <label for="phone">電話番号</label>
                         <input type="tel" id="phone" name="phone">
                     </div>
-                    
+
                     <div class="form-group">
-                        <label for="company">会社名・屋号</label>
-                        <input type="text" id="company" name="company">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="service">ご希望のサービス</label>
-                        <select id="service" name="service">
-                            <option value="">選択してください</option>
-                            <option value="youtube-management">YouTube運用代行</option>
-                            <option value="video-editing">動画編集</option>
-                            <option value="consulting">マーケティングコンサルティング</option>
-                            <option value="other">その他</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="budget">ご予算</label>
+                        <label for="budget">上限金額(月額)</label>
                         <select id="budget" name="budget">
                             <option value="">選択してください</option>
-                            <option value="under-10">10万円未満</option>
-                            <option value="10-30">10万円〜30万円</option>
-                            <option value="30-50">30万円〜50万円</option>
-                            <option value="over-50">50万円以上</option>
-                            <option value="undecided">未定</option>
+                            <option value="15万">15万</option>
+                            <option value="30万">30万</option>
+                            <option value="40万">40万</option>
+                            <option value="50万">50万</option>
+                            <option value="100万">100万</option>
+                            <option value="200万以上">200万以上</option>
                         </select>
                     </div>
-                    
+
                     <div class="form-group">
-                        <label for="message">お問い合わせ内容 <span class="required">*</span></label>
+                        <label for="email">メールアドレス <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">ご相談内容 <span class="required">*</span></label>
                         <textarea id="message" name="message" rows="6" placeholder="ご質問やご相談内容をお聞かせください" required></textarea>
                     </div>
-                    
+
                     <div class="form-group checkbox-group">
                         <label class="checkbox-label">
                             <input type="checkbox" id="privacy" name="privacy" required>
@@ -1457,7 +1442,7 @@
                             <a href="privacy.html" target="_blank" class="privacy-link">プライバシーポリシー</a>に同意する <span class="required">*</span>
                         </label>
                     </div>
-                    
+
                     <button type="submit" class="submit-btn">
                         <span>無料相談を申し込む</span>
                         <i class="fas fa-paper-plane"></i>
