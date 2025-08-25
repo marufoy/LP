@@ -4430,7 +4430,7 @@ body {
     }
     
     .ps-separator i {
-        transform: rotate(0deg);
+        transform: rotate(90deg);
     }
     
     .ps-solution {
@@ -4783,5 +4783,9 @@ body {
     
     .ps-icon i {
         font-size: 1.5rem;
+    }
+    
+    .ps-separator i {
+        transform: rotate(90deg);
     }
 }
