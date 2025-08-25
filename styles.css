@@ -1741,8 +1741,8 @@ body {
     position: relative;
     transition: all 0.3s ease;
     border: 2px solid transparent;
-    min-width: 380px;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .pricing-card:hover {
@@ -1923,7 +1923,7 @@ body {
 /* Responsive Design for Pricing */
 @media (max-width: 1024px) {
     .pricing-plans {
-        grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 1.5rem;
         justify-items: center;
     }
@@ -1931,6 +1931,8 @@ body {
     .pricing-card {
         padding: 2rem 1.5rem;
         max-width: 450px;
+        width: 100%;
+        box-sizing: border-box;
     }
     
     .plan-price {
@@ -1969,11 +1971,14 @@ body {
         grid-template-columns: 1fr;
         gap: 1.5rem;
         justify-items: center;
+        padding: 0 1rem;
     }
     
     .pricing-card {
         max-width: 100%;
-        margin: 0 1rem;
+        margin: 0;
+        width: 100%;
+        box-sizing: border-box;
     }
     
     .pricing-card.popular {
@@ -1984,6 +1989,7 @@ body {
         flex-direction: column;
         text-align: center;
         gap: 1rem;
+        margin: 0 1rem;
     }
     
     .plan-price {
@@ -2022,9 +2028,15 @@ body {
 }
 
 @media (max-width: 480px) {
+    .pricing-plans {
+        padding: 0 0.5rem;
+    }
+    
     .pricing-card {
-        margin: 0 0.5rem;
+        margin: 0;
         padding: 1.5rem 1rem;
+        width: 100%;
+        box-sizing: border-box;
     }
     
     .plan-name {
