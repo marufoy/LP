@@ -1299,14 +1299,14 @@ body {
     padding: 1.5rem;
 }
 
-.comparison-tentcorp-header {
+.comparison-tentocorp-header {
     background: linear-gradient(135deg, #ffebee, #fce4ec);
     padding: 1.5rem;
     text-align: center;
     border: 2px solid #ff0000;
 }
 
-.comparison-tentcorp-header h3 {
+.comparison-tentocorp-header h3 {
     color: #ff0000;
     font-size: 1.8rem;
     font-weight: 900;
@@ -1362,14 +1362,14 @@ body {
     margin: 0;
 }
 
-.comparison-tentcorp {
+.comparison-tentocorp {
     background: linear-gradient(135deg, #ffebee, #fce4ec);
     padding: 2rem 1.5rem;
     border: 2px solid #ff0000;
     text-align: center;
 }
 
-.tentcorp-content h4 {
+.tentocorp-content h4 {
     color: #ff0000;
     font-size: 1.2rem;
     font-weight: 700;
@@ -1391,7 +1391,7 @@ body {
     margin-top: 0.5rem;
 }
 
-.stars-tentcorp {
+.stars-tentocorp {
     font-size: 1.5rem;
     color: #ff0000;
     margin-top: 0.5rem;
@@ -1460,17 +1460,17 @@ body {
     }
     
     .comparison-category,
-    .comparison-tentcorp,
+    .comparison-tentocorp,
     .comparison-others {
         padding: 1.8rem 1.2rem;
     }
     
-    .comparison-tentcorp-header,
+    .comparison-tentocorp-header,
     .comparison-others-header {
         padding: 1.2rem;
     }
     
-    .comparison-tentcorp-header h3,
+    .comparison-tentocorp-header h3,
     .comparison-others-header h3 {
         font-size: 1.6rem;
     }
@@ -1507,19 +1507,19 @@ body {
     }
     
     .comparison-category,
-    .comparison-tentcorp,
+    .comparison-tentocorp,
     .comparison-others {
         padding: 1.5rem 1rem;
         min-width: 180px;
     }
     
-    .comparison-tentcorp-header,
+    .comparison-tentocorp-header,
     .comparison-others-header {
         padding: 1rem;
         min-width: 180px;
     }
     
-    .comparison-tentcorp-header h3,
+    .comparison-tentocorp-header h3,
     .comparison-others-header h3 {
         font-size: 1.4rem;
     }
@@ -1528,7 +1528,7 @@ body {
         font-size: 1.1rem;
     }
     
-    .tentcorp-content h4,
+    .tentocorp-content h4,
     .others-content h4 {
         font-size: 1rem;
     }
@@ -1554,19 +1554,19 @@ body {
     }
     
     .comparison-category,
-    .comparison-tentcorp,
+    .comparison-tentocorp,
     .comparison-others {
         padding: 1rem 0.8rem;
         min-width: 150px;
     }
     
-    .comparison-tentcorp-header,
+    .comparison-tentocorp-header,
     .comparison-others-header {
         padding: 0.8rem;
         min-width: 150px;
     }
     
-    .comparison-tentcorp-header h3,
+    .comparison-tentocorp-header h3,
     .comparison-others-header h3 {
         font-size: 1.2rem;
     }
@@ -1575,7 +1575,7 @@ body {
         font-size: 1rem;
     }
     
-    .tentcorp-content h4,
+    .tentocorp-content h4,
     .others-content h4 {
         font-size: 0.9rem;
     }
@@ -1592,7 +1592,7 @@ body {
         padding: 0.4rem 0.8rem;
     }
     
-    .stars-tentcorp,
+    .stars-tentocorp,
     .stars-others {
         font-size: 1.2rem;
     }
@@ -1610,19 +1610,19 @@ body {
     }
     
     .comparison-category,
-    .comparison-tentcorp,
+    .comparison-tentocorp,
     .comparison-others {
         padding: 0.8rem 0.5rem;
         min-width: 130px;
     }
     
-    .comparison-tentcorp-header,
+    .comparison-tentocorp-header,
     .comparison-others-header {
         padding: 0.6rem;
         min-width: 130px;
     }
     
-    .comparison-tentcorp-header h3,
+    .comparison-tentocorp-header h3,
     .comparison-others-header h3 {
         font-size: 1rem;
     }
@@ -1631,7 +1631,7 @@ body {
         font-size: 0.9rem;
     }
     
-    .tentcorp-content h4,
+    .tentocorp-content h4,
     .others-content h4 {
         font-size: 0.8rem;
     }
@@ -1648,7 +1648,7 @@ body {
         padding: 0.3rem 0.6rem;
     }
     
-    .stars-tentcorp,
+    .stars-tentocorp,
     .stars-others {
         font-size: 1rem;
     }
