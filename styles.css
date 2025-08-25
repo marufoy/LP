@@ -2914,6 +2914,8 @@ body {
     border: 2px solid transparent;
 }
 
+
+
 .faq-item:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(255, 0, 0, 0.15);
@@ -3021,12 +3023,13 @@ body {
     max-height: 0;
     overflow: hidden;
     transition: all 0.4s ease;
-  background: white;
+    background: white;
+    border-top: 1px solid #e0e0e0;
 }
 
 .faq-item.active .faq-answer {
     max-height: 300px;
-  border-top: 1px solid #e0e0e0;
+    overflow: visible;
 }
 
 .faq-answer-content {

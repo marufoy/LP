@@ -370,22 +370,18 @@ function toggleFAQ(element) {
     const faqItem = element.parentElement;
     const isActive = faqItem.classList.contains('active');
     
-    // Close all FAQ items
-    document.querySelectorAll('.faq-item').forEach(item => {
-        item.classList.remove('active');
-    });
-    
-    // Open clicked item if it wasn't active
-    if (!isActive) {
+    // Toggle the clicked FAQ item
+    if (isActive) {
+        faqItem.classList.remove('active');
+    } else {
         faqItem.classList.add('active');
     }
 }
 
-// Close FAQ when clicking outside
-document.addEventListener('click', function(event) {
-    if (!event.target.closest('.faq-item')) {
-        document.querySelectorAll('.faq-item').forEach(item => {
-            item.classList.remove('active');
-        });
-    }
+// ページ読み込み時に全てのFAQを開いた状態にする
+document.addEventListener('DOMContentLoaded', function() {
+    // 全てのFAQアイテムにactiveクラスを追加
+    document.querySelectorAll('.faq-item').forEach(item => {
+        item.classList.add('active');
+    });
 });
