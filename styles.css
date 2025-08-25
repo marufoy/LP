@@ -1507,43 +1507,30 @@ body {
     .comparison-table {
         margin: 0 10px;
         border-radius: 15px;
-        overflow-x: auto;
+        overflow: hidden;
         position: relative;
-    }
-    
-    .comparison-table::after {
-        content: "← 左右にスクロールしてください →";
-        position: absolute;
-        bottom: -30px;
-        left: 50%;
-        transform: translateX(-50%);
-        background: rgba(255, 0, 0, 0.1);
-        color: #ff0000;
-        padding: 5px 15px;
-        border-radius: 15px;
-        font-size: 0.8rem;
-        font-weight: 500;
-        white-space: nowrap;
     }
     
     .comparison-header,
     .comparison-row {
-        min-width: 600px;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 2px;
+        width: 100%;
     }
     
     .comparison-category,
     .comparison-tentocorp,
     .comparison-others {
         padding: 1.5rem 1rem;
-        min-width: 180px;
+        width: 100%;
+        box-sizing: border-box;
     }
     
     .comparison-tentocorp-header,
     .comparison-others-header {
         padding: 1rem;
-        min-width: 180px;
+        width: 100%;
+        box-sizing: border-box;
     }
     
     .comparison-tentocorp-header h3,
@@ -1577,51 +1564,56 @@ body {
     
     .comparison-header,
     .comparison-row {
-        min-width: 500px;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1px;
     }
     
     .comparison-category,
     .comparison-tentocorp,
     .comparison-others {
-        padding: 1rem 0.8rem;
-        min-width: 150px;
+        padding: 0.8rem 0.5rem;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 0.85rem;
     }
     
     .comparison-tentocorp-header,
     .comparison-others-header {
-        padding: 0.8rem;
-        min-width: 150px;
+        padding: 0.8rem 0.5rem;
+        width: 100%;
+        box-sizing: border-box;
     }
     
     .comparison-tentocorp-header h3,
     .comparison-others-header h3 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     
     .category-content h4 {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     
     .tentocorp-content h4,
     .others-content h4 {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
     
     .category-icon {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     
     .price-highlight,
     .speed-highlight,
     .support-highlight,
     .achievement {
-        font-size: 0.8rem;
-        padding: 0.4rem 0.8rem;
+        font-size: 0.75rem;
+        padding: 0.3rem 0.6rem;
     }
     
     .stars-tentocorp,
     .stars-others {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 }
 
@@ -1633,29 +1625,34 @@ body {
     
     .comparison-header,
     .comparison-row {
-        min-width: 450px;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1px;
     }
     
     .comparison-category,
     .comparison-tentocorp,
     .comparison-others {
-        padding: 0.8rem 0.5rem;
-        min-width: 130px;
+        padding: 0.6rem 0.4rem;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 0.8rem;
     }
     
     .comparison-tentocorp-header,
     .comparison-others-header {
-        padding: 0.6rem;
-        min-width: 130px;
+        padding: 0.6rem 0.4rem;
+        width: 100%;
+        box-sizing: border-box;
     }
     
     .comparison-tentocorp-header h3,
     .comparison-others-header h3 {
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
     
     .category-content h4 {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
     
     .tentocorp-content h4,
@@ -1664,7 +1661,7 @@ body {
     }
     
     .category-icon {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     
     .price-highlight,
@@ -1672,7 +1669,7 @@ body {
     .support-highlight,
     .achievement {
         font-size: 0.7rem;
-        padding: 0.3rem 0.6rem;
+        padding: 0.25rem 0.5rem;
     }
     
     .stars-tentocorp,
