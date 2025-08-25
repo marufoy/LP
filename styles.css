@@ -4536,6 +4536,10 @@ body {
         font-size: 1.5rem;
     }
     
+    .customer-profile h3 {
+        font-size: 1.3rem;
+    }
+    
     /* Mobile Menu Responsive Adjustments */
     .mobile-menu-content {
         padding: 1rem;
@@ -4734,6 +4738,10 @@ body {
         margin-bottom: 1rem;
         font-size: 1.1rem;
         padding: 1.5rem 1rem;
+    }
+    
+    .customer-profile h3 {
+        font-size: 1.1rem;
     }
     
     .customer-info-container {
