@@ -1431,7 +1431,7 @@ body {
 
 .comparison-header {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2px;
     background: #f0f0f0;
 }
@@ -1450,28 +1450,42 @@ body {
 
 .comparison-tentocorp-header h3 {
     color: #ff0000;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     font-weight: 900;
     margin: 0;
 }
 
-.comparison-others-header {
+.comparison-company-a-header {
     background: #f5f5f5;
-    padding: 1.5rem;
+    padding: 1rem;
     text-align: center;
     border: 1px solid #ddd;
 }
 
-.comparison-others-header h3 {
+.comparison-company-a-header h3 {
     color: #666;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.comparison-company-b-header {
+    background: #f5f5f5;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.comparison-company-b-header h3 {
+    color: #666;
+    font-size: 2.2rem;
     font-weight: 700;
     margin: 0;
 }
 
 .comparison-row {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2px;
     background: #f0f0f0;
     margin-bottom: 2px;
@@ -1479,7 +1493,7 @@ body {
 
 .comparison-category {
     background: linear-gradient(135deg, #ffebee, #fce4ec);
-    padding: 2rem 1.5rem;
+    padding: 1.5rem 1rem;
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -1487,13 +1501,13 @@ body {
 }
 
 .category-icon {
-    font-size: 2rem;
+    font-size: 2.5rem;
     flex-shrink: 0;
 }
 
 .category-content h4 {
     color: #ff0000;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     font-weight: 700;
     margin: 0 0 0.5rem 0;
 }
@@ -1506,14 +1520,14 @@ body {
 
 .comparison-tentocorp {
     background: linear-gradient(135deg, #ffebee, #fce4ec);
-    padding: 2rem 1.5rem;
+    padding: 1.5rem 1rem;
     border: 2px solid #ff0000;
     text-align: center;
 }
 
 .tentocorp-content h4 {
     color: #ff0000;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     margin: 0 0 1rem 0;
     line-height: 1.4;
@@ -1525,10 +1539,10 @@ body {
 .achievement {
     background: #ff0000;
     color: white;
-    padding: 0.5rem 1rem;
+    padding: 0.8rem 1.5rem;
     border-radius: 25px;
     font-weight: 700;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     display: inline-block;
     margin-top: 0.5rem;
 }
@@ -1539,16 +1553,24 @@ body {
     margin-top: 0.5rem;
 }
 
-.comparison-others {
+.comparison-company-a {
     background: #f8f8f8;
-    padding: 2rem 1.5rem;
+    padding: 1.5rem 1rem;
     border: 1px solid #ddd;
     text-align: center;
 }
 
-.others-content h4 {
+.comparison-company-b {
+    background: #f8f8f8;
+    padding: 1.5rem 1rem;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.company-a-content h4,
+.company-b-content h4 {
     color: #666;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     margin: 0 0 1rem 0;
     line-height: 1.4;
@@ -1559,7 +1581,7 @@ body {
 .no-guarantee,
 .extra-cost {
     color: #999;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     margin-top: 0.5rem;
 }
 
