@@ -1105,7 +1105,7 @@ body {
 }
 
 .customer-voice {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.8;
     color: #2c3e50;
     font-style: normal;
@@ -1119,6 +1119,9 @@ body {
     transition: all 0.4s ease;
     text-align: center;
     font-weight: 500;
+    overflow-wrap: break-word;
+    word-break: keep-all;
+    hyphens: none;
 }
 
 
@@ -1205,11 +1208,10 @@ body {
 }
 
 .data-header h4 {
-    font-size: 1.4rem;
+    font-size: 2.3rem;
     font-weight: 700;
     color: #ff0000;
     text-align: center;
-    margin-bottom: 1.5rem;
 }
 
 .data-metrics {
@@ -1288,7 +1290,7 @@ body {
 
 .metric-item:hover .metric-number {
   animation-duration: 1s;
-  color: #cc0000;
+  color: #ff0000;
 }
 
 .growth-chart {
@@ -4809,6 +4811,9 @@ body {
         margin-bottom: 1rem;
         font-size: 1.1rem;
         padding: 1.5rem 1rem;
+        overflow-wrap: break-word;
+        word-break: keep-all;
+        hyphens: none;
     }
     
     .customer-profile h3 {
