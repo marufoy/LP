@@ -1414,8 +1414,12 @@ body {
 
 /* Comparison Section */
 .comparison {
-    padding: 80px 0;
+    padding: 40px 0;
     background: #f8f9fa;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .comparison-table {
@@ -1438,33 +1442,33 @@ body {
 
 .comparison-category-header {
     background: white;
-    padding: 1.5rem;
+    padding: 1rem;
 }
 
 .comparison-tentocorp-header {
     background: linear-gradient(135deg, #ffebee, #fce4ec);
-    padding: 1.5rem;
+    padding: 1rem;
     text-align: center;
     border: 2px solid #ff0000;
 }
 
 .comparison-tentocorp-header h3 {
     color: #ff0000;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 900;
     margin: 0;
 }
 
 .comparison-others-header {
     background: #f5f5f5;
-    padding: 1.5rem;
+    padding: 1rem;
     text-align: center;
     border: 1px solid #ddd;
 }
 
 .comparison-others-header h3 {
     color: #666;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 700;
     margin: 0;
 }
@@ -1479,7 +1483,7 @@ body {
 
 .comparison-category {
     background: linear-gradient(135deg, #ffebee, #fce4ec);
-    padding: 2rem 1.5rem;
+    padding: 1.5rem 1rem;
     display: flex;
     align-items: center;
     gap: 0.8rem;
@@ -1506,7 +1510,7 @@ body {
 
 .comparison-tentocorp {
     background: linear-gradient(135deg, #ffebee, #fce4ec);
-    padding: 2rem 1.5rem;
+    padding: 1.5rem 1rem;
     border: 2px solid #ff0000;
     text-align: center;
 }
@@ -1541,7 +1545,7 @@ body {
 
 .comparison-others {
     background: #f8f8f8;
-    padding: 2rem 1.5rem;
+    padding: 1.5rem 1rem;
     border: 1px solid #ddd;
     text-align: center;
 }
@@ -1571,7 +1575,7 @@ body {
 
 .comparison-cta {
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 .cta-content {
@@ -1604,17 +1608,17 @@ body {
     .comparison-category,
     .comparison-tentocorp,
     .comparison-others {
-        padding: 1.8rem 1.2rem;
+        padding: 1.4rem 1rem;
     }
     
     .comparison-tentocorp-header,
     .comparison-others-header {
-        padding: 1.2rem;
+        padding: 1rem;
     }
     
     .comparison-tentocorp-header h3,
     .comparison-others-header h3 {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
     
     /* Problem & Solution Section Tablet Adjustments */
@@ -1656,21 +1660,21 @@ body {
     .comparison-category,
     .comparison-tentocorp,
     .comparison-others {
-        padding: 1.5rem 1rem;
+        padding: 1.2rem 0.8rem;
         width: 100%;
         box-sizing: border-box;
     }
     
     .comparison-tentocorp-header,
     .comparison-others-header {
-        padding: 1rem;
+        padding: 0.8rem;
         width: 100%;
         box-sizing: border-box;
     }
     
     .comparison-tentocorp-header h3,
     .comparison-others-header h3 {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
     
     .category-content h4 {
@@ -1707,22 +1711,22 @@ body {
     .comparison-category,
     .comparison-tentocorp,
     .comparison-others {
-        padding: 0.8rem 0.5rem;
+        padding: 0.6rem 0.4rem;
         width: 100%;
         box-sizing: border-box;
-        font-size: 0.85rem;
+        font-size: 0.8rem;
     }
     
     .comparison-tentocorp-header,
     .comparison-others-header {
-        padding: 0.8rem 0.5rem;
+        padding: 0.6rem 0.4rem;
         width: 100%;
         box-sizing: border-box;
     }
     
     .comparison-tentocorp-header h3,
     .comparison-others-header h3 {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     
     .category-content h4 {
@@ -1768,22 +1772,22 @@ body {
     .comparison-category,
     .comparison-tentocorp,
     .comparison-others {
-        padding: 0.6rem 0.4rem;
+        padding: 0.5rem 0.3rem;
         width: 100%;
         box-sizing: border-box;
-        font-size: 0.8rem;
+        font-size: 0.75rem;
     }
     
     .comparison-tentocorp-header,
     .comparison-others-header {
-        padding: 0.6rem 0.4rem;
+        padding: 0.5rem 0.3rem;
         width: 100%;
         box-sizing: border-box;
     }
     
     .comparison-tentocorp-header h3,
     .comparison-others-header h3 {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
     }
     
     .category-content h4 {
