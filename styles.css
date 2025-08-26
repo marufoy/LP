@@ -3913,7 +3913,7 @@ body {
 
 /* 問い合わせフォーム */
 .contact-section {
-    padding: 80px 0;
+    padding: 40px 0;
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
     position: relative;
 }
@@ -3934,16 +3934,16 @@ body {
 .contact-wrapper {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 60px;
+    gap: 40px;
     max-width: 1200px;
     margin: 0 auto;
     align-items: start;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .contact-info {
     background: white;
-    padding: 40px;
+    padding: 30px;
     border-radius: 16px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     border: 1px solid #e0e0e0;
@@ -3952,10 +3952,10 @@ body {
 }
 
 .contact-info h3 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     color: #333;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-align: center;
     position: relative;
 }
@@ -3975,8 +3975,8 @@ body {
 .contact-item {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 30px;
-    padding: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
     border-radius: 12px;
     transition: all 0.3s ease;
     border: 1px solid transparent;
@@ -3989,28 +3989,28 @@ body {
 }
 
 .contact-icon {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     background: linear-gradient(135deg, #ff0000, #cc0000);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 20px;
+    margin-right: 15px;
     flex-shrink: 0;
     box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
 }
 
 .contact-icon i {
     color: white;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .contact-text h4 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     color: #333;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 
 .contact-text p {
@@ -4021,7 +4021,7 @@ body {
 
 .contact-form {
     background: white;
-    padding: 50px;
+    padding: 30px;
     border-radius: 16px;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
     border: 1px solid #e0e0e0;
@@ -4042,15 +4042,15 @@ body {
 }
 
 .form-group {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .form-group label {
     display: block;
     font-weight: 600;
     color: #333;
-    margin-bottom: 8px;
-    font-size: 16px;
+    margin-bottom: 6px;
+    font-size: 15px;
 }
 
 .required {
@@ -4062,10 +4062,10 @@ body {
 .form-group select,
 .form-group textarea {
     width: 100%;
-    padding: 15px 20px;
+    padding: 12px 16px;
     border: 2px solid #e0e0e0;
     border-radius: 8px;
-    font-size: 16px;
+    font-size: 15px;
     transition: all 0.3s ease;
     background: #fafafa;
     font-family: inherit;
@@ -4083,21 +4083,21 @@ body {
 
 .form-group textarea {
     resize: vertical;
-    min-height: 120px;
+    min-height: 100px;
     line-height: 1.6;
 }
 
 .checkbox-group {
-    margin: 30px 0;
+    margin: 20px 0;
 }
 
 .checkbox-label {
     display: flex;
     align-items: flex-start;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.6;
-    gap: 12px;
+    gap: 10px;
 }
 
 .checkbox-label input[type="checkbox"] {
@@ -4184,19 +4184,19 @@ body {
 
 .submit-btn {
     width: 100%;
-    padding: 18px 30px;
+    padding: 15px 25px;
     background: linear-gradient(135deg, #ff0000, #cc0000);
     color: white;
     border: none;
     border-radius: 50px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 12px;
+    gap: 10px;
     position: relative;
     overflow: hidden;
     box-shadow: 0 8px 25px rgba(255, 0, 0, 0.3);
