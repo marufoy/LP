@@ -2746,22 +2746,22 @@ body {
 
 /* Benefits Section */
 .benefits {
-    padding: 80px 0;
+    padding: 40px 0;
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
 }
 
 .benefits-grid {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 3rem;
-    max-width: 800px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .benefit-card {
     background: white;
     border-radius: 20px;
-    padding: 2.5rem;
+    padding: 1.5rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     border: 3px solid #ffebee;
     position: relative;
@@ -2819,13 +2819,13 @@ body {
 .benefit-header {
     display: flex;
     align-items: flex-start;
-    gap: 2rem;
-    margin-bottom: 2rem;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .benefit-icon {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -2849,7 +2849,7 @@ body {
 }
 
 .benefit-icon i {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
 }
 
@@ -2858,7 +2858,7 @@ body {
 }
 
 .benefit-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: #333;
     line-height: 1.3;
@@ -2883,15 +2883,15 @@ body {
 }
 
 .benefit-details {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .benefit-feature {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
-    padding: 1rem;
+    gap: 0.8rem;
+    margin-bottom: 0.8rem;
+    padding: 0.8rem;
     background: #f8f9fa;
     border-radius: 10px;
     border-left: 4px solid #ff0000;
@@ -2905,18 +2905,18 @@ body {
 }
 
 .benefit-feature span {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 600;
     color: #333;
-    line-height: 1.5;
+    line-height: 1.4;
 }
 
 .benefit-pricing {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.8rem;
     background: linear-gradient(135deg, #ffebee, #fce4ec);
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: 15px;
     border: 2px solid #ff0000;
     flex-wrap: wrap;
@@ -2925,21 +2925,21 @@ body {
 .original-price {
     background: #e0e0e0;
     color: #666;
-    padding: 0.5rem 1rem;
+    padding: 0.4rem 0.8rem;
     border-radius: 20px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 600;
     text-decoration: line-through;
 }
 
 .arrow {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 900;
     color: #ff0000;
 }
 
 .free-price {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 900;
     color: #ff0000;
     text-shadow: 0 2px 4px rgba(255, 0, 0, 0.3);
@@ -2997,14 +2997,19 @@ body {
 
 /* Responsive Design for Benefits */
 @media (max-width: 768px) {
-    .benefit-header {
-        flex-direction: column;
-        text-align: center;
+    .benefits-grid {
+        grid-template-columns: 1fr;
         gap: 1.5rem;
     }
     
+    .benefit-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
     .benefit-title {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     
     .free-label {
@@ -3019,7 +3024,7 @@ body {
     .benefit-pricing {
         flex-direction: column;
         text-align: center;
-        gap: 1rem;
+        gap: 0.8rem;
     }
     
     .service-label {
@@ -3027,11 +3032,11 @@ body {
     }
     
     .footer-highlight {
-        padding: 1.5rem 2rem;
+        padding: 1rem 1.5rem;
     }
     
     .footer-highlight h3 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 }
 
@@ -3239,7 +3244,7 @@ body {
 
 /* Company Info Section */
 .company-info {
-    padding: 80px 0;
+    padding: 40px 0;
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
 }
 
@@ -3251,7 +3256,7 @@ body {
 .representative-card {
     background: white;
     border-radius: 20px;
-    padding: 3rem;
+    padding: 2rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     border: 2px solid #ffebee;
     position: relative;
@@ -3282,15 +3287,15 @@ body {
 .representative-header {
     display: flex;
     align-items: center;
-    gap: 2rem;
-    margin-bottom: 2.5rem;
-    padding-bottom: 2rem;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
     border-bottom: 2px solid #ffebee;
 }
 
 .representative-avatar {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     background: linear-gradient(135deg, #ff0000, #cc0000);
     border-radius: 50%;
     display: flex;
@@ -3301,46 +3306,46 @@ body {
 }
 
 .representative-avatar i {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: white;
 }
 
 .representative-title h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 700;
     color: #ff0000;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
 }
 
 .name-section {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.3rem;
 }
 
 .name-jp {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 900;
     color: #333;
     line-height: 1.2;
 }
 
 .name-en {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #666;
     font-weight: 500;
 }
 
 .representative-details {
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 .detail-item {
     display: flex;
     align-items: flex-start;
-    gap: 1.5rem;
-    margin-bottom: 1.5rem;
-    padding: 1rem;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.8rem;
     background: #f8f9fa;
     border-radius: 10px;
     border-left: 4px solid #ff0000;
@@ -3360,14 +3365,14 @@ body {
 }
 
 .achievements {
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 .achievements h4 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 700;
     color: #333;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     text-align: center;
     position: relative;
 }
@@ -3387,14 +3392,14 @@ body {
 .achievement-list {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .achievement-item {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
-    padding: 1.5rem;
+    gap: 1rem;
+    padding: 1rem;
     background: linear-gradient(135deg, #ffebee, #fce4ec);
     border-radius: 15px;
     border: 1px solid rgba(255, 0, 0, 0.1);
@@ -3408,8 +3413,8 @@ body {
 }
 
 .achievement-icon {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     background: linear-gradient(135deg, #ff0000, #cc0000);
     border-radius: 50%;
     display: flex;
@@ -3420,14 +3425,14 @@ body {
 }
 
 .achievement-icon i {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: white;
 }
 
 .achievement-text {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #333;
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 .achievement-text strong {
