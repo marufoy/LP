@@ -1121,15 +1121,7 @@ body {
     font-weight: 500;
 }
 
-.quote-mark {
-    font-size: 3rem;
-    color: #ff0000;
-    font-family: Georgia, serif;
-    line-height: 1;
-    display: inline-block;
-    margin: 0 0.5rem;
-    opacity: 0.8;
-}
+
 
 .customer-voice::before {
     content: '';
