@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         // Show success message (you can customize this)
-        alert('お問い合わせありがとうございます。24時間以内にご返信いたします。');
+        alert('お問い合わせありがとうございます。2日以内にご返信いたします。');
     });
     
     // Observe elements for animation
@@ -248,35 +248,20 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
             // フォームデータの取得
             const formData = new FormData(contactForm);
             const data = Object.fromEntries(formData);
             
             // バリデーション
             if (!validateForm(data)) {
+                e.preventDefault();
                 return;
             }
-            
-            // 送信ボタンの状態変更
-            const submitBtn = contactForm.querySelector('.submit-btn');
-            const originalText = submitBtn.innerHTML;
-            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> 送信中...';
-            submitBtn.disabled = true;
-            
-            // 実際の送信処理（ここではシミュレーション）
-            setTimeout(() => {
-                alert('お問い合わせありがとうございます。24時間以内にご返信いたします。');
-                contactForm.reset();
-                submitBtn.innerHTML = originalText;
-                submitBtn.disabled = false;
-            }, 2000);
         });
     }
     
     function validateForm(data) {
-        const required = ['name', 'furigana', 'email', 'message', 'privacy'];
+        const required = ['company', 'name', 'phone', 'budget', 'email', 'privacy'];
         
         for (let field of required) {
             if (!data[field] || data[field].trim() === '') {
@@ -297,10 +282,11 @@ document.addEventListener('DOMContentLoaded', function() {
     
     function getFieldName(field) {
         const fieldNames = {
-            'name': 'お名前',
-            'furigana': 'フリガナ',
+            'company': '会社名',
+            'name': 'ご担当者名',
+            'phone': '電話番号',
+            'budget': '上限金額(月額)',
             'email': 'メールアドレス',
-            'message': 'お問い合わせ内容',
             'privacy': 'プライバシーポリシーへの同意'
         };
         return fieldNames[field] || field;
