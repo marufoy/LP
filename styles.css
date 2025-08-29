@@ -4803,7 +4803,7 @@ body {
     .customer-voice {
         order: 2;
         margin-bottom: 1rem;
-        font-size: 1.1rem;
+        font-size: 0.9rem;
         padding: 1.5rem 1rem;
         overflow-wrap: break-word;
         word-break: keep-all;
