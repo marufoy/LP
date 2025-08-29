@@ -1693,6 +1693,10 @@ body {
     .cta-content h3 {
         font-size: 1.5rem;
     }
+    
+    .data-header h4 {
+        font-size: 1.7rem;
+    }
 }
 
 @media (max-width: 480px) {
